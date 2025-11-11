@@ -21,7 +21,7 @@ import { JoiValidationSchema } from './common/config/joi.validation';
       rootPath: join(__dirname, '..', 'public'),
     }),
     MongooseModule.forRoot(process.env.MONGODB ?? '', {
-      dbName: 'pokemonsdb',
+      dbName: 'nest-pokemon',
     }),
     PokemonModule,
     CommonModule,
